@@ -27,5 +27,18 @@ int main() {
         temp = temp->next;
     }
 
+    MyNode *middle = new MyNode();
+    middle->value = 89;
+
+    body->next = middle;
+    middle->next = tail;
+
+    temp = head;
+
+    while(temp) {
+        cout << "Value is : " << temp->value << endl;
+        temp = temp->next;
+    }
+
     return 0;
 }
